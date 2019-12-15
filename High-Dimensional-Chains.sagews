@@ -49,7 +49,6 @@ y(t) = (2)*(t^2) - 1
 
 
 # Finding the derivatives of positions x and y with respect to t 
-
 print("\n The derivative of x with respect to t: dx/dt\n")
 dx_dt = x.diff(t)
 show(dx_dt)

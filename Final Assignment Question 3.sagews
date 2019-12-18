@@ -1,3 +1,37 @@
+####################
+# Final Assignment #
+####################
+
+##############
+# Question 3 #
+##############
+
+#######################
+# 3.a. Parametric plot
+
+x(t) = (t+1)^2
+y(t) = 2*t^2 - 1
+parametric_plot((x(t), y(t)),(t,0,2), axes_labels = ["$x(t)$","$y(t)$"])
+
+##########################
+## 3.b. Parametric 3d plot
+
+# Parametric plot  
+# w/o axes labelling
+x(t) = (t+1)^2
+y(t) = 2*t^2 - 1
+T(t) = e^(x/10) * (x^2 + y^2)
+plot1 = parametric_plot3d((x(t), y(t), T(t)),(t,0,1))
+plot1
+
+# Parametric plot w/ axes labelling
+from sage.manifolds.utilities import set_axes_labels
+set_axes_labels(plot1, "x(t)","y(t)", "T(t)")
+
+
+###############
+## 3.c - 3.d
+
 # When we have a differentiable function T(x,y) where the variables 
 # x and y are themselvees differentiable functions of a single variable t, 
 # does the chain rule hold for T(t) at t=1? 
